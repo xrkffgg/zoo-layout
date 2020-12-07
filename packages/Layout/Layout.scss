@@ -2,68 +2,68 @@
 @import '~@zoo-js/colors/color.scss';
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	height: 100vh;
-	font-size: 62.5%;
-	background-image: linear-gradient(180deg, #eaf1e7 30%, #d9dfe4 45%, #e6dcc8 71%, #eaf1e7 91%);
-	user-select: none;
-	-moz-user-select: -moz-none;
-	-khtml-user-select: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
+  height: 100vh;
+  font-size: 62.5%;
+  background-image: linear-gradient(180deg, #eaf1e7 30%, #d9dfe4 45%, #e6dcc8 71%, #eaf1e7 91%);
+  user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 
-	.zoo-layout {
-		&-header {
-			background-color: #fff;
-			box-shadow: 4px 4px 12px #d7dbe0;
-			position: fixed;
-			top: 0;
-			height: 76px;
-			width: 100vw;
-			z-index: 99;
+  .zoo-layout {
+    &-header {
+      background-color: #fff;
+      box-shadow: 4px 4px 12px #d7dbe0;
+      position: fixed;
+      top: 0;
+      height: 76px;
+      width: 100vw;
+      z-index: 99;
 
-			&-content {
-				width: 1024px;
-				margin: 0 auto;
-				display: flex;
-				height: 76px;
-				line-height: 76px;
+      &-content {
+        width: 1024px;
+        margin: 0 auto;
+        display: flex;
+        height: 76px;
+        line-height: 76px;
 
-				a+a {
-					margin-left: 10px;
-					text-decoration: none;
-				}
+        a+a {
+          margin-left: 10px;
+          text-decoration: none;
+        }
 
-				h1 {
-					font-family: "Montserrat";
-					margin: 0 20px;
-					font-size: 24px;
-					line-height: 76px;
-					font-weight: normal;
-					color: rgba(0, 0, 0, .85);
-					text-shadow: #494a45 1px 2px 4px;
-				}
+        h1 {
+          font-family: "Montserrat";
+          margin: 0 20px;
+          font-size: 24px;
+          line-height: 76px;
+          font-weight: normal;
+          color: rgba(0, 0, 0, .85);
+          text-shadow: #494a45 1px 2px 4px;
+        }
 
-				img {
-					margin-top: 8px;
-				}
-			}
-		}
+        img {
+          margin-top: 8px;
+        }
+      }
+    }
 
-		&-body {
-			padding-top: 84px;
-		}
-	}
+    &-body {
+      padding-top: 84px;
+    }
+  }
 
-	@media screen and (max-width: 480px) {
-		.zoo-header-content {
-			h1 {
-				display: none;
-			}
-		}
-	}
+  @media screen and (max-width: 480px) {
+    .zoo-header-content {
+      h1 {
+        display: none;
+      }
+    }
+  }
 }

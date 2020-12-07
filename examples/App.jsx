@@ -1,7 +1,7 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-	setup() {
-		return () => <Layout></Layout>
-	}
+  setup() {
+    return () => <Layout></Layout>
+  }
 })

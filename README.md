@@ -1,6 +1,6 @@
 # zoo-layout
 
-![](https://img.shields.io/npm/v/@zoo-js/layout?style=flat-square)
+[![](https://img.shields.io/npm/v/@zoo-js/layout?style=flat-square)](https://www.npmjs.com/package/@zoo-js/layout)
 
 Layout for zoo-js.
 ## install

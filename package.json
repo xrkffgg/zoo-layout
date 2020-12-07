@@ -1,18 +1,24 @@
 {
   "name": "@zoo-js/layout",
   "version": "0.0.1",
-  "main": "lib/zoo-layout.umd.min.js",
+  "main": "./dist/zoo-layout.umd.min.js",
+  "files": [
+    "dist"
+  ],
   "author": "zoo-js",
   "description": "zoo-layout",
-  "keyword": [
+  "homepage": "https://github.com/zoo-js/zoo-layout",
+  "keywords": [
     "zoo-js",
     "layout"
   ],
   "private": false,
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lib": "vue-cli-service build --target lib --name zoo-layout --dest lib packages/index.js"
+    "dist": "vue-cli-service build --target lib --name zoo-layout packages/index.js",
+    "prepublishOnly": "npm run dist && np --yolo --no-publish"
   },
   "repository": {
     "type": "git",
@@ -30,6 +36,7 @@
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
     "compression-webpack-plugin": "^6.0.5",
+    "np": "^7.0.0",
     "sass": "1.29.0",
     "sass-loader": "10.1.0"
   },

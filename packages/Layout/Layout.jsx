@@ -16,7 +16,6 @@ export default defineComponent({
   },
 
   setup(props, { slots }) {
-    console.log(props.title)
     const renderHeader = () => {
       return <div class="zoo-layout-header">
         <div class="zoo-layout-header-content">

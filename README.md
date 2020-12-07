@@ -21,12 +21,15 @@ const slots = {
     default: () => <div>main</div>
 }
 
-<Layout title='zoo-layout' vSlots={slots}></Layout>
+<Layout title={name: 'xx', url: 'xx'} vSlots={slots}></Layout>
 
 //template
 
 <template>
-    <Layout title='zoo-layout'>
+    <Layout title={
+        name: 'xx',
+        url: 'xxx'
+    }>
         <div slot="header">header</div>
         <div>main</div>
     </Layout>

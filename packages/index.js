@@ -1,17 +1,16 @@
 import Layout from './Layout/Layout'
 
 const components = [
-    Layout
+  Layout
 ]
 
-const install = function(app) {
-    components.forEach(com => {
-        app.component(com.name, com)
-    })
-
+const install = function (app) {
+  components.forEach(com => {
+    app.component(com.name, com)
+  })
 }
 
 export default {
-    Layout,
-    install
+  Layout,
+  install
 }

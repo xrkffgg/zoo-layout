@@ -1,7 +1,7 @@
 {
   "name": "@zoo-js/layout",
   "version": "0.0.2",
-  "main": "./dist/zoo-layout.umd.min.js",
+  "main": "./dist/layout.umd.min.js",
   "files": [
     "dist"
   ],
@@ -18,7 +18,7 @@
     "serve": "vue-cli-service serve",
     "start": "yarn && vue-cli-service serve",
     "build": "vue-cli-service build",
-    "dist": "vue-cli-service build --target lib --name zoo-layout packages/index.js",
+    "dist": "vue-cli-service build --target lib --name layout packages/index.js",
     "prepublishOnly": "npm run dist && np --yolo --no-publish"
   },
   "repository": {

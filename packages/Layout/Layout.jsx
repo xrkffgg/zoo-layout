@@ -35,7 +35,7 @@ export default defineComponent({
     }
 
     let cls = 'zoo-layout';
-    if(props.extraClass) {
+    if (props.extraClass) {
       cls += ` ${props.extraClass}`;
     }
 

@@ -24,11 +24,13 @@ const slots = {
   default: () => <div>main</div>
 }
 
-<Layout title={name: 'xx', url: 'xx'} vSlots={slots}></Layout>
+<Layout title={name: 'xx', url: 'xx'} extraClass="test" vSlots={slots}></Layout>
 
 //template
 <template>
-  <Layout title={
+  <Layout
+    extraClass="test"
+    title={
     name: 'xx',
     url: 'xxx'
   }>

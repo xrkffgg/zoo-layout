@@ -1,5 +1,5 @@
 <template>
-  <Layout :title="title">
+  <Layout :title="title" extra-class="22">
     <div>123</div>
   </Layout>
 </template>

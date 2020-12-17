@@ -12,6 +12,10 @@ export default defineComponent({
           url: 'https://github.com/zoo-js/zoo-layout',
         }
       }
+    },
+    extraClass: {
+      type: String,
+      default: ''
     }
   },
 
@@ -30,8 +34,13 @@ export default defineComponent({
       </div>
     }
 
+    let cls = 'zoo-layout';
+    if(props.extraClass) {
+      cls += ` ${props.extraClass}`;
+    }
+
     return () => (
-      <div class="zoo-layout">
+      <div class={cls}>
         { renderHeader()}
         <div class="zoo-layout-body">
           {slots.default?.()}

@@ -1,6 +1,6 @@
 {
   "name": "@zoo-js/layout",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./dist/layout.umd.min.js",
   "files": [
     "dist"

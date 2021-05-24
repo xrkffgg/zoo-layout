@@ -21,17 +21,27 @@ export default defineComponent({
 
   setup(props, { slots }) {
     const renderHeader = () => {
-      return <div class="zoo-layout-header">
-        <div class="zoo-layout-header-content">
-          <a href="https://github.com/zoo-js" target="_blank">
-            <img src={`https://avatars1.githubusercontent.com/u/70757173?s=60&v=4`} />
-          </a>
-          <a href={props.title.url} target="_blank">
-            <h1>{props.title.name}</h1>
-          </a>
-          {slots.header?.()}
+      return (
+        <div className="zoo-layout-header">
+          <div className="zoo-layout-header-content">
+            <a href="https://github.com/zoo-js" target="_blank">
+              <img src={`https://avatars1.githubusercontent.com/u/70757173?s=60&v=4`}/>
+            </a>
+            <a href={props.title.url} target="_blank">
+              <h1>{props.title.name}</h1>
+            </a>
+            {slots.header?.()}
+          </div>
         </div>
-      </div>
+      )
+    }
+
+    const renderBody = () => {
+      return (
+        <div className="zoo-layout-body">
+          {slots.default?.()}
+        </div>
+      )
     }
 
     let cls = 'zoo-layout';
@@ -41,10 +51,8 @@ export default defineComponent({
 
     return () => (
       <div class={cls}>
-        { renderHeader()}
-        <div class="zoo-layout-body">
-          {slots.default?.()}
-        </div>
+        { renderHeader() }
+        { renderBody() }
       </div>
     )
   }
